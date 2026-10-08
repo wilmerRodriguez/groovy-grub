@@ -14,7 +14,7 @@ export default function Navbar() {
           Groovy<span>Grub</span>
         </Link>
         <nav className="nav-links" aria-label="Main">
-          <NavLink to="/" end>Menu</NavLink>
+          <NavLink to="/" end className="nav-menu">Menu</NavLink>
           <NavLink to="/account">{user ? `Hi, ${user.name}` : 'Sign in'}</NavLink>
           <NavLink to="/cart" className="cart-btn" aria-label={`Cart, ${count} items`}>
             🛒 <span>Cart</span>
